@@ -6,16 +6,39 @@
 </head>
 <body>
 <script>
+  //const cannot change
   const key = 'abc123';
-  let points = 50;
-  let winner = false;
+  const points = 50;
+  //however if it is an object, you can reassign properties
 
   const person = {
-    name: 'Wes',
+    name: 'wes',
     age: 28
   }
+  person.age = 29;
+  person.what = 30;
+  //fails
+  // person = {
+  //   new: 'yes'
+  // }
+  console.log(person);
 
   const wes = Object.freeze(person);
+  //unless you freeze it
+  wes.yup = 'no';
+  console.log(wes);
+  //doesn't add or update anything on the object if its frozen (not es6);
+  
+  let winner = false;
+
+  if (points > 40) {
+    let winner=true;
+    console.log(winner);
+  };
+  console.log(winner);
+  // points = 60;
+  console.log(60);
+
 
 </script>
 </body>
