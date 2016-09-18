@@ -14,7 +14,8 @@
     twitter: '@wesbos'
   };
 
-  const { first, last, twitter } = person;
+  const {first, last, twitter} = person;
+
 
   const wes = {
     first: 'Wes',
@@ -32,8 +33,10 @@
 
   const { twitter: tweet, facebook: fb } = wes.links.social;
 
-  const settings = { width: 300, color: 'black' }  // height, fontSize
-  const { width = 100, height = 100, color = 'blue', fontSize = 25} = settings;
+  const settings = { width: 300, color: 'Black' }; // height, fontsize
+  const { width=100, height=100, color="blue", fontsize=10 } = settings
+  // const settings = { width: 300, color: 'black' }  // height, fontSize
+  // const { width = 100, height = 100, color = 'blue', fontSize = 25} = settings;
 
 </script>
 </body>
